@@ -1,0 +1,1902 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans:wght@300&display=swap');
+
+
+
+* {
+  transition: all .6s linear;
+  color: white;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  background-color: #000;
+  margin: 0%;
+}
+
+html {
+  font-size: 60.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+
+
+*****
+.navbar {
+  max-width: 100%;
+}
+
+.bar {
+  width: 100%;
+  display: flex;
+}
+
+.navbar a {
+  margin: auto;
+  width: 100%;
+  font-size: 20px;
+}
+
+#navbarCollapse {
+  width: 100%;
+  text-align: right;
+  margin: 2rem;
+}
+
+.collapse ul {
+  padding: 0%;
+  margin: 0%;
+}
+
+.navbar-nav li {
+  right: 0;
+}
+
+.navbar-collapse a:hover {
+  color: hotpink;
+  transition: 0.6s ease;
+}
+
+
+@media screen and (max-width: 1600px) {
+
+  .bar {
+    align-items: center;
+    background: #242629;
+    height: 6.5rem;
+  }
+
+  .bar .navbar-brand {
+    width: 30%;
+    text-align: center;
+    margin: 0%;
+  }
+
+  .bar .navbar-brand a {
+    width: 100%;
+    font-size: 25px;
+    text-decoration: none;
+  }
+
+  #navbarCollapse {
+    width: 70%;
+  }
+
+  .navv {
+    width: 100%;
+  }
+
+  .navbar-nav li {
+    margin: 1.3rem;
+    text-align: center;
+  }
+
+  .navv ul {
+    justify-content: center;
+  }
+
+  .navbar-nav li a {
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .navbar a:hover {
+    color: hotpink;
+    transition: 0.6s ease;
+  }
+
+}
+
+
+@media screen and (max-width: 1200px) {
+
+  .bar .navbar-brand {
+    width: 30%;
+    text-align: center;
+  }
+
+  .bar .navbar-brand a {
+    width: 100%;
+    font-size: 21px;
+  }
+
+  #navbarCollapse {
+    width: 70%;
+  }
+
+  .navv {
+    width: 100%;
+    padding: 0rem 2rem;
+  }
+
+  .navbar-nav li {
+    margin: .8rem;
+    text-align: center;
+  }
+
+  .navbar-nav li a {
+    width: 100%;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+
+  .navbar {
+    position: relative;
+  }
+  
+  .bar {
+    display: block;
+    width: 100%;
+    height: 5rem;
+  }
+
+  .bar .navbar-brand {
+    text-align: center;
+    width: 25%;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 7px 0rem;    
+  }
+
+  #navbarCollapse {
+    width: 100%;
+    text-align: left;
+    font-size: 20px;
+    margin: 0rem;
+    padding-bottom: 2rem;
+    border-top: 1px solid white;
+  }
+
+  .navv {
+    padding: 0%;
+  }
+
+  .navbar-toggler {
+    padding: .4rem .7rem;
+    vertical-align:bottom;
+    position: absolute;
+    font-size: 18px;
+    right: 3%;
+    margin-top: .7rem;
+  }
+
+  .navbar-nav li:first-child {
+    padding-top: 1.5rem;
+  }
+
+  .navbar-nav li {
+    margin: .2rem 0rem;
+    padding-bottom: .8rem;
+  }
+
+  
+  .navbar-nav li:last-child {
+    padding-bottom: 1.5rem;
+  }
+
+  .navbar-nav li a {
+    width: 100%;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  
+  .bar {
+    display: block;
+    width: 100%;
+    height: 5rem;
+  }
+
+
+  .bar .navbar-brand {
+    margin-left: 2.7rem;
+    width: 84%;    text-align: left;
+    vertical-align: top;
+    font-size: 23px;
+    font-weight: bold;
+    padding-right: 0rem;
+  }
+
+  #navbarCollapse {
+    width: 100%;
+    font-size: 20px;
+    margin: 0rem 0rem;
+    border-top: 2px solid white;
+  }
+
+
+  .navbar-toggler {
+    padding: .3rem .6rem;
+    vertical-align: bottom;
+    font-size: 16px;
+    margin-top: .7rem;
+    right: 5%;
+  }
+
+  .navv {
+    width: 100%;
+  }
+
+  .navbar-nav li {
+    margin: .0rem;
+    text-align: center;
+    margin: .1rem 0rem;
+  }
+
+  .navbar-nav li a {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  #ab {
+    padding-bottom: 1rem;
+  }
+
+}
+
+
+@media screen and (max-width: 568px) {
+
+  .bar .navbar-brand a {
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  .navbar-toggler {
+    margin-top: .9rem;
+    right: 5%;
+  }
+
+}
+
+
+
+******
+.home {
+  max-width: 100%;
+}
+
+.front {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  color: rgb(17, 17, 17);
+  padding: 12rem 0rem;
+  margin-bottom: 3rem;
+  font-size: 18px;
+  background-color: black;
+}
+
+.front .tp {
+  display: block;
+  text-align: center;
+  width: 30%;
+}
+
+.front .tp img {
+  height: 20rem;
+  width: 20rem;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: 5px solid; 
+  margin: auto;  
+}
+
+.tp h3 {
+  color: wheat;
+  text-align: center;
+  font-size: 20px;
+  margin: 1.5rem 0;
+}
+
+.tp p {
+  color: wheat;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 1rem;
+}
+
+.tp p a {
+  text-decoration: none;
+  color: rgb(63, 81, 181);
+}
+
+.social {
+  width: 100%;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.social a img {
+  margin: 0rem .5rem;
+  color: #000;
+  border: none;
+}
+
+.abt {
+  display: block;
+  width: 70%;
+  padding: 0rem 3rem;
+  margin: auto 4rem;
+}
+
+.abtm {
+  padding: 4rem 3rem;
+  background-color: #30353a;
+  border-radius: 50px;  
+}
+
+.abtm h1 {
+  color: wheat;
+  text-decoration: underline;
+}
+
+.abtm .fr2 p {
+  color: wheat;
+  line-height: 3rem;
+  font-family: 'Merriweather', serif;
+  font-size: 18px;
+}
+
+.btn {
+  width: 100%;
+  text-align: left;
+}
+
+.abtm a button {
+  color: black;
+  font-size: 18px;
+  margin-top: 1rem;
+  background-image: linear-gradient(117deg, #ff4747, #ff4880);
+  border-radius: 30px;
+  padding: .25rem 1.5rem;
+}
+
+.abtm a button i {
+  font-size: 18px;
+  color: #000;
+  vertical-align:middle;
+}
+
+.abtm a button:hover {
+  background: white;
+  color: black;
+  transition: 0.6s ease;
+  cursor: pointer;
+}
+
+.containn {
+  width: 100%;
+}
+
+.box-container {
+  width: 100%;
+  display: flex;
+  margin-top: 2rem;
+}
+
+.headingE {
+  color: wheat;
+  display: block;
+  text-align: left;
+  font-size: 22px;
+  text-decoration:underline
+}
+
+.boxes {
+  width: 60%;
+  display: block;
+}
+
+.box {
+  width: 100%;
+  padding-left: 1.5rem;
+  color: wheat;
+  border-left: .2rem solid hotpink;
+  margin-top: 2rem;
+  outline: 0;
+}
+
+.box-container .box span {
+  margin: auto .5rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: wheat;
+  text-decoration: underline;
+}
+
+.box-container .box h3 {
+  font-size: 1.8rem;
+}
+
+.box-container .box p{
+  font-size: 15px;
+  font-family: 'Merriweather',sans-serif;
+  color: wheat;
+  line-height: 20px;
+}
+
+.interests {
+  width: 50%;
+  padding-left: 8rem;
+}
+
+.interests h1 {
+  line-height: 18px;
+  font-size: 22px;
+  align-items: center;
+  color: wheat;
+  text-decoration:underline
+}
+
+.interests ul {
+  padding: .8rem .2rem;
+}
+
+.interests ul li {
+  padding: .6rem 0rem;
+  color: wheat;
+  font-size: 19px;
+}
+
+
+@media screen and (max-width: 1200px) {
+
+  .abtm a button {
+    font-size: 16px;
+    padding: .2rem 1rem;
+  }
+
+  .box-container {
+    padding-top: 0rem;
+    font-size: 20px;
+  }
+
+  .box-container h1 {
+    padding-top: 0rem;
+  }
+ 
+  .interests {
+    padding-left: 3rem;
+  }
+
+  .interests h1 {
+    margin: 0%;
+    padding: 0%;
+  }
+
+  .interests ul {
+    padding: 1.6rem .2rem;
+  }
+
+}
+
+
+@media screen and (max-width: 1024px) {
+
+  .front {
+    width: 100%;
+    display: block;
+    padding: 10rem 0rem;
+    margin-bottom: 1.5rem;
+    background-color: black;
+
+  }
+    
+  .front .tp {
+    width: 100%;
+  }
+
+  .front .tp img {
+    height: 20rem;
+    width: 20rem;
+  }
+
+  .tp h3 {
+    color: wheat;
+    font-size: 22px;
+    margin: 18px 0;
+    margin-bottom: 5px;
+  }
+
+  .tp p {
+    font-size: 20px;
+    color: wheat;
+    margin-bottom: .3rem;
+  }
+
+  .tp p a {
+    font-size: 18px;
+    color: rgb(63, 81, 181);
+  }
+
+  .social {
+    margin-top: .1rem;
+    justify-content: center;
+  }
+
+  .social a {
+    color: rgb(63, 81, 181);
+    margin: .4rem .7rem;
+  }
+
+  .abt {
+    width: 100%;
+    padding: 2rem 3rem;
+    margin: 0%;
+  }
+
+  .abtm {
+    justify-content: center;
+    padding-bottom: 3rem;
+    border-radius: 70px;    
+  }
+
+  .abtm .fr1 h1 {
+    font-size: 2.6rem;
+  }
+
+  .abtm .fr1 {
+    margin-bottom: 1rem;
+    text-decoration: underline;
+  }
+
+  .abtm .fr2 p {
+    line-height: 26px;
+    font-size: 18px;
+  }
+
+  .abtm a button {
+    font-size: 16px;
+    padding: .2rem 1rem;
+  }
+
+  .interests {
+    padding-left: 10rem;
+  }
+
+  .interests h1 {
+    font-size: 22px;
+  }
+
+  .interests ul li {
+    padding: .6rem 0rem;
+  }
+
+}
+
+
+@media screen and (max-width: 868px) {
+  .front {
+    padding: 8rem auto;
+  }
+
+  .front .tp img {
+    height: 19rem;
+    width: 19rem;
+  }
+
+  .tp h3 {
+    margin-bottom: 2px;
+  }
+
+  .tp p {
+    font-size: 18px;
+    margin-bottom: .2rem;
+  }
+
+  .social a {
+    margin: .2rem .5rem;
+  }
+  
+  .abtm {
+    padding: 2.5rem 2rem;
+    border-radius: 40px;  
+  }
+
+  .abtm .fr1 h1 {
+    font-size: 22px;
+  }
+
+  .box-container {
+    display: block;
+  }
+
+  .boxes {
+    width: 100%;
+    display: block;
+  }
+
+  .boxes h1 {
+    font-size: 20px;
+  }
+  
+  .box {
+    width: 100%;
+    padding-left: 1.5rem;
+    color: wheat;
+    border-left: .2rem solid hotpink;
+    margin-top: 2rem;
+  }
+  
+  .box-container .box span {
+    margin: auto .5rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: wheat;
+    text-decoration: underline;
+  }
+  
+  .box-container .box h3 {
+    font-size: 1.8rem;
+  }
+  
+  .box-container .box p{
+    font-size: 15px;
+    font-family: 'Merriweather',sans-serif;
+    line-height: 20px;
+  }  
+
+  .interests {
+    width: 100%;
+    padding: 2.5rem 2rem;
+  }
+
+  .interests h1 {
+    font-size: 20px;
+  }
+
+  .interests ul {
+    padding: 1.1rem .2rem;
+  }
+
+  .interests ul li {
+    padding: .2rem 0rem;
+  }
+
+}
+
+
+@media screen and (max-width: 568px) {
+
+  .social p{
+    margin: 0%;
+  }
+
+  .social {
+    margin: 0rem ;
+  }
+
+  .abt {
+    padding: 1rem 1rem;
+  }
+  
+  .abtm {
+    padding: 2.5rem 2rem;
+  }
+
+  .abtm .fr1 h1 {
+    margin: 0%;
+  }
+
+  .abtm .fr2 p {
+    font-size: 16px;
+  }
+
+  .boxes h1 {
+    font-size: 20px;
+  }
+
+  .boxes .box p {
+    font-size: 13px;
+  }
+  
+  .interests {
+    padding: 2.5rem 0rem;
+  }
+
+  .interests h1 {
+    font-size: 20px;
+  }
+
+  .interests ul {
+    padding: 1.1rem 3rem;
+  }
+
+  .interests ul li {
+    font-size: 17px;
+  }
+  
+}
+
+
+*****
+.about {
+  max-width: 100%;
+}
+
+.about .row {
+  width: 100%;
+  background-color: rgb(231, 229, 229);
+  display: flex;
+  justify-content: space-around;
+  padding: 12rem 0rem;
+  padding-bottom: 25rem;
+  font-size: 18px;
+}
+
+.headd {
+  width: 30%;
+}
+
+.heading1 {
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+  text-decoration: underline;
+  color: black;
+  font-weight: bold;
+}
+
+.about .row .counter {
+  width: 70%;
+  padding: 0rem 3rem;
+  margin-top: -2rem;
+
+}
+
+.coun {
+  flex: 1 1 0rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.about .row .box {
+  width: 45%;
+  height: 20%;
+  font-size: 1rem;
+  background-color: rgb(247, 246, 246);
+  text-align: center;
+  padding: 1rem 1.2rem;
+  margin: 1.5rem;
+}
+
+.about .counter .box span {
+  font-size: 1.8rem;
+  color: black;
+  border-bottom: 1px solid black;
+  font-family: 'Merriweather',sans-serif;
+}
+
+.about .row .counter .box h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: black;}
+
+.about .row .counter p {
+  font-size: 16px;
+  margin: 1rem 0rem;
+  color: #000;
+}
+
+.about .row .counter button {
+  background-image: linear-gradient(117deg, #ff4747, #ff4880);
+  border: 1px solid rgb(63, 81, 181);
+  color: white;
+  border-radius: 10px;
+  padding: .1rem 2.5rem;
+  font-size: 15px;
+}
+
+.about .row .counter button:hover {
+  background: white;
+  color: black;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1300px) {
+  .about .row .box {
+    height: 20%;
+  }  
+  
+}
+
+
+@media screen and (max-width: 1024px){    
+  .about .row {
+    display: block;
+    margin: auto;
+    padding: 6rem 0rem;
+    background-color: rgb(184, 179, 179);
+    
+  }
+
+  .headd {
+    margin: 3rem auto;
+    width: 100%;
+  }
+
+  .about .row .counter {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+    padding: 0rem 2rem;
+  }
+
+  .about .row .counter .box {
+    width: 45%;
+    height: 45%;
+    background-color: rgb(231, 230, 230);
+    padding: 1rem .7rem;
+    margin: 1rem 1rem;
+  }
+
+  .about .counter .box span {
+    font-size: 1.6rem;
+  }
+
+  .about .row .counter p {
+    margin: .5rem 0rem;
+  }
+
+  .about .row .counter button {
+    padding: .1rem 2rem;
+    margin-top: 1.2rem;
+  }
+
+}
+
+@media screen and (max-width: 838px){    
+
+  .headd {
+    margin: 2rem auto;
+  }
+
+  .heading1 {
+    font-size: 24px;
+  }
+
+  .coun {
+    width: 45%;
+    height: 45%;
+    margin: .5rem .5rem;
+  }
+
+  .about .row .counter .box {
+    width: 100%;
+    height: 23%;
+    padding: .5rem 1.5rem;
+    margin: 1rem 1rem;
+  }
+
+  .about .row .counter .box h2 {
+    font-size: 18px;
+  }
+
+  .about .row .counter p {
+    font-size: 17px;
+    margin: .5rem 0rem;
+  }
+
+  .about .row .counter button {
+    padding: .1rem 2rem;
+    font-size: 15px;
+    margin: 1rem 0rem;
+  }
+
+}
+
+
+@media screen and (max-width: 568px){    
+
+  .headd {
+    margin: 1rem auto;
+  }
+
+  .heading1 {
+    font-size: 22px;
+  }
+
+  .about .row .counter .box {
+    margin: 1rem 0rem;
+  }
+
+  .about .row .counter .box h2 {
+    font-size: 18px;
+  }
+
+  .about .row .counter p {
+    font-size: 16px;
+    margin: .6rem 0rem;
+  }
+
+}
+
+
+
+******
+
+.course {
+  max-width: 100%;
+}
+
+.coursew {
+  width: 100%;
+  padding: 12rem 0rem;
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+}
+
+.coursework {
+  width: 30%;
+  display: flex;
+  text-align: center;
+  color: rgb(17, 17, 17);
+  font-family: 'Merriweather',sans-serif;
+
+}
+
+.coursework h1 {
+  width: 100%;
+  font-size: 25px;
+  color: wheat;
+  text-decoration: underline;
+  padding-top: 2rem;
+  font-weight: bold;
+  justify-content: center;
+}
+
+.courseworking {
+  width: 70%;
+  font-size: 16px;
+  padding: 0rem 3rem;
+  margin: auto 3rem;
+  margin-top: -1rem;
+
+}
+
+.coursee {
+  padding: 3rem 4rem;
+  background-color: #30353a;
+  border-radius: 50px; 
+}
+
+.courseworking p {
+  width: 100%;
+  line-height: 22px;
+  color: wheat;
+  font-size: 18px;
+}
+
+.courseworkin {
+  width: 100%;
+  margin-top: .2rem;
+}
+
+.courseworkin h3{
+  font-size: 20px;
+  color: wheat;
+  text-decoration: underline;
+  margin-bottom: 0%;
+}
+
+.courseworkin ol {
+  align-items: center;
+  color: wheat;
+  margin: 1rem 0rem;
+  margin-top: 0rem;
+  padding: 2%;
+}
+
+.courseworkin ol li {
+  font-size: 18px;
+  width: 100%;
+  color: wheat;
+}
+
+.courseworkin ul {
+  color: wheat;
+  margin: 2rem;
+  line-height: 25px;
+  margin-top: .8rem;
+}
+
+.courseworkin ul li {
+  font-size: 18px;
+  line-height: 23px;
+  width:100%;
+  color: wheat;
+}
+
+
+@media screen and (max-width: 1024px) {
+  
+  .coursew {
+    padding: 8rem 0rem;
+    display: block;
+    padding-top: 5rem;
+  }  
+
+  .coursework {
+    width: 100%;
+  }
+  
+  .coursework h1{
+    margin: 3rem auto;
+  }
+
+  .courseworking {
+    width: 100%;
+    padding: 0rem 3rem;
+    margin: 0%;
+  }
+
+  .coursee {
+    padding: 2rem 1rem;
+  }
+
+  .courseworking p {
+    padding: .4rem 2rem;
+  }
+
+  .courseworkin {
+    margin-top: .5rem;
+    padding: 0rem 1.8rem;
+  }
+
+  .courseworkin ol {
+    margin: 2rem 0rem;
+    margin-top: .5rem;
+  }
+
+  .courseworkin ol li {
+    font-size: 20px;
+    line-height: 25px; 
+  }
+
+  .courseworkin ul li {
+    font-size: 1.6rem;
+    line-height: 25px;
+  }
+
+  .courseworkin ul {
+    margin: 1rem 0rem;
+    margin-top: .3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .coursew {
+    margin: auto;
+  }
+  
+  .coursework h1{
+    font-size: 24px;
+    margin: 1.5rem auto;
+  } 
+
+  
+  .courseworking {
+    padding: 0rem 2rem;
+  }
+
+  .coursee {
+    margin: 2.5rem .5rem;
+    padding: 2.5rem 2.5rem;
+    border-radius: 40px;
+  }
+
+  .courseworking p {
+    line-height: 24px;
+    font-size: 18px;
+    padding: .1rem .3rem;
+  }
+
+  .courseworkin {
+    margin-top: .1rem;
+    padding: 0rem .8rem;
+  }
+
+  .courseworkin h3{
+    font-size: 18px;
+  }
+
+  .courseworkin ol {
+    margin: .6rem;
+  }
+
+  .courseworkin ol li {
+    font-size: 18px;
+    margin-left: .2rem;
+    line-height: 24px;
+  }
+
+  .courseworkin ul li {
+    line-height: 24px;
+  }
+
+}
+
+
+@media screen and (max-width: 568px) {
+
+  .coursew {
+    margin: auto;
+  }
+  
+  .coursework h1{
+    font-size: 22px;
+    margin: .8rem auto;
+  } 
+
+  .courseworking {
+    padding: 0rem 1rem;
+  }
+
+  .coursee {
+    margin: 1.5rem 0rem;
+    padding: 2.5rem 2rem;
+  }
+
+  .courseworking p {
+    font-size: 16px;
+  }
+
+}
+
+
+*****
+.teach {
+  max-width: 100%;
+
+}
+
+.teachi {
+  width: 100%;
+  background-color: black;
+  padding: 12rem 0rem;
+  padding-bottom: 30rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.teachin {
+  width: 30%;
+  color: rgb(17, 17, 17);
+  display: flex;
+  text-align: center;
+}
+
+.teachin h1 {
+  width: 100%;
+  font-size: 25px;
+  color: wheat;
+  font-weight: bold;
+  padding-top: 2rem;
+  text-decoration: underline;
+  justify-content: center;
+
+}
+
+.teaching {
+  width: 70%;
+  padding: 0rem 3rem;
+  margin: auto 3rem;
+  margin-top: -1rem;
+}
+
+.teachh {
+  padding: 3rem 4rem;
+  background-color: #30353a;
+  border-radius: 50px;
+}
+
+.teaching p {
+  width: 100%;
+  line-height: 24px;
+  font-size: 18px;
+  color: wheat;
+}
+
+.teachingg {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.teachingg h2 {
+  font-size: 20px;
+  color: wheat;
+  text-decoration: underline;
+}
+
+.teachingg ul li {
+  font-size: 18px;
+  color: wheat;
+  align-items: center;
+}
+
+.teachingg ul {
+  margin: 2rem;
+  line-height: 24px;
+  margin-top: .3rem;
+}
+
+@media screen and (max-width: 1024px) {
+  
+  .teach {
+    background-color: rgb(184, 179, 179);
+    padding-bottom: 8rem;
+  }
+
+  .teachi {
+    display: block;
+    padding: 5rem 0rem;
+  }
+  
+  .teachin {
+    width: 100%;
+    margin: 3rem auto;
+  }
+  
+  .teaching {
+    width: 100%;
+    padding: 0rem 3rem;
+    margin: 0%;
+  }
+
+  .teachh {
+    padding: 2rem 2.5rem;
+  }
+  
+  .teaching p {
+    line-height: 24px;
+  }
+  
+  .teachingg h2 {
+    margin-top: 1.8rem;
+  }
+  
+  .teachingg ul {
+    width: 100%;
+    margin: 2rem 0rem;
+    margin-top: 1rem;
+  }  
+  
+  .teachingg ul li {
+    line-height: 24px;
+  }
+  
+}
+
+
+@media screen and (max-width: 768px) {
+  
+  .teachin {
+    margin: 2rem auto;
+  }
+  
+  .teachin h1 {
+    font-size: 24px;
+  }
+  
+  .teaching {
+    padding: 0rem 2rem;
+  }
+
+  .teachh {
+    margin: 2rem .5rem;
+    border-radius: 40px;
+  }
+  
+  .teaching p {
+    line-height: 24px;
+  }
+  
+  .teachingg h2 {
+    font-size: 18px;
+    padding-top: .8rem;
+  }
+  
+  .teachingg ul {
+    width: 100%;
+    margin: 2rem auto;
+    margin-top: .5rem;
+  }  
+  
+  .teachingg ul li {
+    font-size: 17px;
+    line-height: 24px;
+  }
+  
+}
+
+
+@media screen and (max-width: 768px) {
+  
+  .teachin {
+    margin: 1rem auto;
+  }
+  
+  .teachin h1 {
+    font-size: 22px;
+  }
+  
+  .teaching {
+    padding: 0rem 1rem;
+  }
+
+  .teachh {
+    margin: 2rem 0rem;
+    padding: 2.3rem 1.8rem;
+  }
+  
+  .teachingg h2 {
+    padding-top: 0rem;
+  }
+  
+  .teachingg ul li {
+    font-size: 17px;
+  }
+  
+}
+
+
+*****
+
+.talkk {
+  max-width: 100%;
+}
+
+.talks {
+  background-color: rgb(206, 204, 204);
+  width: 100%;
+  padding: 12rem 0rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.recentalk {
+  width: 30%;
+  color: rgb(17, 17, 17);
+  text-align: center;
+}
+
+.recentalk h1 {
+  width: 100%;
+  color: rgb(17, 17, 17);
+  font-size: 25px;
+  text-decoration: underline;
+  justify-content: center;
+  font-weight: bold;
+  margin: 0rem 2rem;
+}
+
+.talkings {
+  width: 70%;
+  padding: 0rem 3ren;
+  margin: auto 3rem;
+
+}
+
+.ttalk {
+  padding: 0rem 3rem;
+}
+
+.talkings ul {
+  padding: 0rem 1rem;
+}
+
+.talkings ul li {
+  width: 100%;
+  font-size: 20px;
+  color: rgb(17, 17, 17);
+  line-height: 2.4rem;
+}
+
+
+@media screen and (max-width: 1024px) {
+  
+  .talkk {
+    background-color: #000;
+  }
+
+  .talks {
+    display: block;
+    padding: 6rem 1rem;
+  }
+  
+  .recentalk {
+    width: 100%;
+    margin: 2rem 0rem;
+  }
+
+  .recentalk h1 {
+    margin: auto 0%;
+  }
+  
+  .talkings {
+    width: 100%;
+    padding: 0rem 2rem;
+    margin: 0%;
+  }
+
+  .ttalk {
+    padding: 2rem 1rem;
+  }
+
+  .talkings ul {
+    margin: 1%;
+  }
+
+  .talkings ul li {
+    font-size: 18px;
+  }
+    
+}
+
+@media screen and (max-width: 768px) {
+  
+  .recentalk h1 {
+    font-size: 24px;
+    margin: 0%;
+  }
+  
+  .talkings {
+    padding: 0rem 2.2rem;
+    margin-top: .3rem;
+  }
+
+  .ttalk {
+    padding: 1rem 1rem;
+  }
+
+  .talkings ul {
+    margin: 0rem 1rem;
+    padding: 0%;
+    margin-right: 0%;
+  }  
+
+  .talkings ul li {
+    line-height: 24px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  
+  .recentalk h1 {
+    font-size: 22px;
+  }
+  
+  .talkings {
+    padding: 0rem 1.5rem;
+    margin-top: 0rem;
+  }
+
+}
+
+
+*****
+.post {
+  max-width: 100%;
+}
+
+.posti{                  
+  background-color: rgb(206, 204, 204);
+  width: 100%;
+  padding: 12rem 0rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.postin {
+  width: 35%;
+  display: flex;
+  text-align: center;
+  color: rgb(17, 17, 17);
+}
+
+.postin h1 {
+  color: #000;
+  width: 100%;
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 25px;
+}
+
+.posting {
+  width: 70%;
+  padding: 0rem 3rem;
+}
+
+.form {
+  width: 100%;
+}
+
+.form h2 {
+  color: #000;
+  font-size: 25px;
+  margin-bottom: 1rem;
+}
+
+.form form {
+  width: 100%;
+}
+
+.text {
+  width: 100%;
+}
+
+.msgbox {
+  color: #000;
+  width: 70%;
+  font-size: 16px;
+  padding: 1rem;
+  margin-right: .5rem;
+}
+
+.posting button {
+  font-size: 18px;
+  padding: .2rem 2rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  background-image: linear-gradient(117deg, #ff4747, #ff4880);
+  vertical-align: top;
+}
+
+.postcont {
+  width: 70%;
+  padding: 3rem;
+  border: 1px solid black;
+}
+
+
+@media screen and (max-width: 1024px) {
+
+  .posti {
+    display: block;
+    padding: 6rem 2rem;
+  }
+
+  .postin {
+    margin: 1rem auto;
+    width: 100%;
+  }
+
+  .posting {
+    width: 100%;
+    margin: 0rem;
+    padding: 0rem 3rem;
+
+  }
+
+  
+  .form {
+    margin: 0rem;
+    padding: 1rem 1rem;
+  }
+
+  .form h2 {
+    font-size: 20px;
+    margin-bottom: .2rem;
+  }
+
+  .msgbox {
+    width: 50%;
+    height: 20rem;
+  }
+
+  .form button {
+    padding: 0rem 1.8rem;
+    margin: 0%;
+  }
+
+  .comm {
+    width: 100%;
+  }
+
+  .postcont {
+    width: 100%;
+    height: 10rem;
+    color: #000;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .posti {
+    padding-bottom: 25rem;
+  }
+
+  .postin h1 {
+    font-size: 23px;
+  }
+
+  .posting {
+    margin: 2rem 0rem;
+    padding: 0rem 2.1rem;
+  }
+
+  .form h2 {
+    font-size: 16px;
+    margin-bottom: .15rem;
+  }
+
+  .form {
+    padding: 0rem;
+  }
+
+  .msgbox {
+    width: 60%;
+    height: 13rem;
+  }
+
+  .form button {
+    font-size: 15px;
+  }
+
+  .postcont {
+    padding: .5rem 0rem;
+  }
+}
+
+
+@media screen and (max-width: 568px) {
+
+  .postin h1 {
+    font-size: 22px;
+  }
+
+  .posting {
+    margin: 1.5rem 0rem;
+    padding: 0rem 1rem;
+  }
+
+}
+
+
+*****
+.contact {
+  max-width: 100%;
+  background: #000;
+}
+
+.conta {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10rem 0rem;
+  margin-bottom: 18rem;
+  background: #000;
+}
+ 
+.cont {
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  margin: 0%;
+  padding: 0%;
+}
+
+.headingc {
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+  text-decoration: underline;
+  font-weight: bold;
+  color: wheat;
+}
+
+.contact .row {
+  width: 70%;
+  display: block;
+  margin: 0rem 3rem;
+  padding: 0rem 3rem;
+}
+
+.row .content {
+  width: 100%;
+}
+
+.content .title {
+  text-decoration: underline;
+  color: wheat;
+  font-size: 22px;
+  margin: 0%;
+  margin-left: 1.1rem;
+}
+
+.content .info {
+  padding-left: 1rem;
+}
+
+.contact .row .content .info h3{
+  display: flex;
+  font-family: 'Merriweather',sans-serif;
+  font-size: 20px;
+  color: wheat;
+  padding: 10px 0px;
+  margin-top: 1rem;
+  font-weight: normal;
+}
+
+.contact .row .content .info h3 i {
+  padding-right: 1rem;
+  color: hotpink;
+  font-size: 25px;
+}
+
+.mapouter {
+  width: 100%;
+  text-align: left;
+  margin: 2rem;
+  height: 60%;
+}
+
+#gmap_canvas {
+  width: 90%;
+}
+
+.gmap_canvas {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: none!important;
+}
+
+
+@media screen and (max-width: 1024px) {
+  
+  .conta {
+    display: block;
+    padding: 6rem 2rem;
+    margin-bottom: 10rem;
+  }
+   
+  .cont {
+    width: 100%;
+    margin: 2rem auto;
+  }
+  
+  .headingc {
+    margin-bottom: .5rem;
+  }
+  
+  .contact .row {
+    width: 100%;
+    padding: 0rem 2rem;
+    margin: 0%;
+  }
+  
+  .content .title {
+    font-size: 20px;
+    padding-bottom: .3rem;
+  }
+
+  .content .info {
+    margin-top: 1rem;
+  }
+  
+  .contact .row .content .info h3{
+    font-size: 1.8rem;
+    margin-top: 0rem;
+    padding: .1rem 0;
+  } 
+  
+  .mapouter {
+    text-align: center;
+    height: 100%;
+    margin: 0rem;
+  }
+
+}
+
+
+@media screen and (max-width: 768px) {
+  .conta {
+    padding: 5rem 2.5rem;
+    margin-bottom: 8rem;
+  }
+   
+  .headingc {
+    font-size: 24px;
+    margin-bottom: 0rem;
+  }
+  
+  
+  .contact .row {
+    width: 100%;
+    padding: 0rem 0rem;
+    margin: 0%;
+  }
+  
+  .row .content {
+    padding: 0rem 0rem;
+  }
+  
+  .content .title {
+    padding-bottom: .5rem;
+  }
+  
+  .row .content .info h3{
+    padding: 0rem 0;
+  } 
+  
+  .row .content .info h3 i{
+    font-size: 18px;
+  } 
+
+  .mapouter {
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+
+}
+
+
+@media screen and (max-width: 568px) {
+   
+  .headingc {
+    font-size: 22px;
+  }
+  
+  .content .title {
+    padding-bottom: .5rem;
+    margin: 0%;
+    font-size: 18px;
+  }
+  
+  .row .content .info {
+    padding: 0%;
+  } 
+
+}
+
+
+.reserved {
+  max-width: 100%;
+}
+
+.reserved p {
+  display: flex;
+  width: 100%;
+  font-size: 12px;
+  justify-content: center;
+}
+
+.hrr {
+  border: 1px solid white;
+}

@@ -1,0 +1,1870 @@
+  @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&family=Open+Sans&display=swap');
+
+
+ *{
+  font-family: 'Merriweather',sans-serif;
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  transition: all .6s linear;
+}
+
+:root{
+  --yellow:#f9ca24;
+}
+
+*::selection{
+  background: var(--yellow);
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+  width: 1.4rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: #222;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--yellow);
+}
+
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  margin: 0%;
+}
+
+body a {
+  text-decoration: none;
+  color: rgb(63, 81, 181);
+}
+
+.btn:hover {
+  background: var(--yellow);
+}
+
+
+
+*****
+.header {
+  max-width: 100%;
+}
+
+.pp{
+  padding: 1rem 0rem;  
+  width: 100%;
+  height: 12%;
+  position: fixed;
+  overflow: hidden;
+  font-family: 'Merriweather',sans-serif;
+  background: #242a35;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  z-index: 2000;
+}
+
+.prof {
+  width: 30%;
+  padding: 1rem 1rem;
+  margin: 1rem 1rem;
+  color: rgb(6, 148, 6);
+  font-size: 2.2rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#ppp {
+  width: 65%;
+  margin-left: 6rem;
+  display: flex;
+  box-sizing: border-box;
+}
+
+#ppp a {
+  margin: 1rem 2.2rem;
+  font-weight: bold;
+  color: white;
+  font-size: 1.8rem;
+  text-decoration: none;
+  transition: all linear;
+}
+
+.pp a:hover {
+  color: var(--yellow);
+}
+
+.pp .icon {
+  display: none;
+}
+
+#ppp a:hover {
+  color: var(--yellow);
+}
+
+
+@media screen and (max-width: 1024px) {
+
+  .header {
+    width: 100%;
+    position: fixed;
+  }
+
+  .pp {
+    display: block;
+    padding: .15rem 0rem;
+    position: relative;
+    text-align: left;
+  }
+
+  .prof {
+    padding: .5rem 0rem;
+    margin: 0%;
+    font-size: 30px;
+  }
+  
+  .pp a {
+    display: block;
+  }
+
+  .pp a.icon {
+    color: white;
+    display: block;
+    padding: 0%;
+    position: absolute;
+    margin-top: 1.4rem;
+    margin-right: 1.5rem;
+    float: right;
+    right: 0;
+    top: 0;
+  }
+    
+  #ppp {
+    width: 100%;
+    border-top: 2px solid white;
+    margin: 0rem;
+    padding: .5rem 0rem;  
+    display: none;
+  }
+
+  #ppp a {
+    padding: .9rem 1.8rem;
+    margin: .1rem 0rem;
+    font-size: 20px;
+    transition: all linear;
+  }
+
+  .ppp a:hover {
+    color: rgb(63, 81, 181);
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  
+  .pp a {
+    padding: .2rem 2rem;
+  }
+  
+  .prof {
+    margin: 1rem 0rem;
+    width: 25%;
+    font-size: 25px;
+  }
+  
+  .pp a.icon {
+    margin-top: 1rem;
+    margin-right: 1rem;
+  }
+    
+  #ppp {
+    padding: .5rem 0rem;  
+  }
+
+  #ppp a {
+    padding: .9rem 0rem;
+    margin: .1rem 2rem;
+    font-size: 18px;
+  }
+
+}
+
+/*
+@media screen and (max-width: 481px) {
+  
+  .prof {
+    margin: 1rem 1.6rem;
+    font-size: 18px;
+  }
+  
+  .pp a.icon {
+    margin-top: 1.4rem;
+    margin-right: 1rem;
+  }
+    
+  #ppp a {
+    padding: .8rem 1.8rem;
+    margin: .1rem 0rem;
+    font-size: 16px;
+  }
+
+}
+*/
+
+
+
+
+******
+.home {
+  max-width: 100%;
+  background-color: white;
+}
+
+.front {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  color: rgb(17, 17, 17);
+  padding: 12rem 0rem;
+  margin-bottom: 3rem;
+  font-size: 18px;
+}
+
+.front .tp {
+  display: block;
+  text-align: center;
+  width: 20%;
+}
+
+.front .tp img {
+  height: 18rem;
+  width: 18rem;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: 5px solid var(--yellow); 
+  margin: auto;  
+}
+
+.tp h5 {
+  color: rgb(17, 17, 17);
+  text-align: center;
+  font-size: 20px;
+  margin: 1.5rem 0;
+}
+
+.tp p {
+  color: rgb(32, 32, 32);
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 1rem;
+}
+
+.tp p a {
+  text-decoration: none;
+  color: rgb(63, 81, 181);
+}
+
+.social {
+  width: 100%;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 22px;
+}
+
+.social a {
+  color: rgb(63, 81, 181);
+}
+
+.abtm {
+  display: block;
+  width: 60%;
+}
+
+.abtm .fr2 p {
+  color: #080808;
+  line-height: 3rem;
+}
+
+
+.abtm a button {
+  color: rgb(46, 45, 45);
+  font-size: 15px;
+  margin-top: 1rem;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: .2rem 1rem;
+}
+
+
+header h1 {
+  font-size: 22px;
+  text-align: center;
+  color: rgb(12, 12, 12);
+  margin: 0%;
+  margin-top: 2rem;
+}
+
+.containn {
+  max-width: 100%;
+  display: flex;
+}
+
+.box-container {
+  width: 60%;
+  display: block;
+  padding-top: 3rem;
+}
+
+.resume {
+  width: 50%;
+}
+
+.headingE {
+  color: rgb(7, 7, 7);
+  text-align: center;
+  font-size: 18px;
+  text-decoration:underline
+}
+
+.boxes {
+  width: 65%;
+  display: block;
+  padding: .8rem 0rem;
+}
+
+.box {
+  width: 100%;
+  padding-left: .5rem;
+  border-left: .2rem solid #0a0a0a;
+  margin-bottom: 1rem;
+}
+
+.box-container .box span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #050505;
+}
+
+.box-container .box h3 {
+  font-size: 1.4rem;
+  color: #070707;
+}
+
+.box-container .box p{
+  font-size: 1.4rem;
+  font-family: 'Merriweather',sans-serif;
+  color: #0a0a0a;
+  line-height: 18px;
+}
+
+.education .box-container .box i {
+  position: absolute;
+  top: -1.5rem; 
+  left: -2.5rem;
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  text-align: center;
+  font-size: 2rem;
+  color: #030303;
+  background: var(--yellow);
+}
+
+.interests {
+  width: 35%;
+  padding-top: 3.5rem;
+}
+
+.interests h1 {
+  line-height: 18px;
+  font-size: 18px;
+  align-items: center;
+  text-decoration:underline
+}
+
+.interests ul li {
+  padding: .8rem 0rem;
+  font-size: 15px;
+}
+
+
+@media screen and (max-width: 1024px) {
+
+  .front {
+    width: 100%;
+    display: block;
+    padding: 10rem 0rem;
+    margin-bottom: 1.5rem;
+  }
+    
+  .front .tp {
+    width: 100%;
+  }
+
+  .front .tp img {
+    height: 15rem;
+    width: 15rem;
+  }
+
+  .tp h5 {
+    font-size: 1.8rem;
+    margin: .8rem 0;
+  }
+
+  .tp p {
+    font-size: 1.6rem;
+    margin-bottom: .5rem;
+  }
+
+  .tp p a {
+    font-size: 1.6rem;
+  }
+
+  .social {
+    margin-top: .8rem;
+    justify-content: center;
+
+  }
+
+  .social a {
+    font-size: 22px;
+    margin: .3rem .6rem;
+  }
+
+  .abtm {
+    width: 100%;
+    padding: 0rem 1.6rem;
+    padding-top: 4rem;
+  }
+
+  .abtm .fr1 h1 {
+    font-size: 2.6rem;
+  }
+
+  .abtm .fr2 p {
+    line-height: 1.8rem;
+    font-size: 1.6rem;
+  }
+
+  .abtm a button {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    border-radius: 3px;
+    padding: .3rem .6rem;
+  }
+
+  .containn {
+    max-width: 100%;
+    display: block;
+  }
+
+  .box-container {
+    width: 100%;
+    padding-top: 2.5rem;
+  }
+
+  .resume {
+    width: 100%;
+  }
+
+  .headingE {
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    text-align: left;
+  }
+
+  .boxes {
+    width: 100%;
+    padding: 0rem 0rem;
+  }
+
+  .box {
+    width: 100%;
+    padding-left: .7rem;
+  }
+
+  .box-container .box span {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .box-container .box h3 {
+    font-size: 1.5rem;
+  }
+
+  .box-container .box p{
+    font-size: 1.2rem;
+    line-height: 20px;
+  }
+
+  .education .box-container .box i {
+    font-size: 3rem;
+  }
+
+
+  .interests {
+    width: 100%;
+    padding-top: 2.5rem;
+  }
+
+  .interests h1 {
+    line-height: 4px;
+    font-size: 1.6rem;
+  }
+
+  .interests ul {
+    margin: 1rem 1.8rem;
+  }
+
+  .interests ul li {
+    padding: .4rem 0rem;
+    font-size: 1.6rem;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+
+  .front {
+    padding: 8rem 1rem;
+    margin-bottom: 1.5rem;
+  }
+    
+  .front .tp img {
+    height: 200px;
+    width: 200px;
+  }
+
+  .tp h5 {
+    font-size: 20px;
+    margin: .8rem 0;
+  }
+
+  .tp p {
+    font-size: 16px;
+    margin-bottom: .5rem;
+  }
+
+  .tp p a {
+    font-size: 17px;
+  }
+
+  .social {
+    margin-top: .8rem;
+  }
+
+  .social a {
+    font-size: 24px;
+    margin: .3rem .6rem;
+  }
+
+  .abtm .fr1 h1 {
+    font-size: 26px;
+  }
+
+  .abtm .fr2 p {
+    line-height: 25px;
+    font-size: 16px;
+  }
+
+  .abtm a button {
+    font-size: 14px;
+    margin-top: 10px;
+    padding: .4rem .5rem;
+  }
+
+  .box-container {
+    padding-top: 3.5rem;
+  }
+
+  .headingE {
+    font-size: 1.8rem;
+  }
+
+  .box {
+    padding-left: .6rem;
+    line-height: 23px;
+    margin: 2rem 0rem;
+
+  }
+
+  .box-container .box span {
+    font-size: 1.6rem;
+  }
+
+  .box-container .box h3 {
+    font-size: 1.6rem;
+  }
+
+  .box-container .box p{
+    font-size: 1.4rem;
+  }
+
+  .education .box-container .box i {
+    font-size: 2.5rem;
+  }
+
+  .interests {
+    margin-top: 1.8rem;
+  }
+
+  .interests h1 {
+    line-height: 4px;
+    font-size: 19px;
+  }
+
+  .interests ul {
+    margin: 2rem 1.8rem;
+  }
+
+  .interests ul li {
+    padding: .4rem 0rem;
+    font-size: 1.8rem;
+  }
+
+}
+
+/*
+@media screen and (max-width: 481px) {
+  .front {
+    padding: 8rem 0rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .front .tp img {
+    height: 14rem;
+    width: 14rem;
+  }
+
+  .tp h5 {
+    font-size: 1.6rem;
+    margin: .5rem 0;
+  }
+
+  .tp p {
+    font-size: 1rem;
+    margin-bottom: .5rem;
+  }
+
+  .tp p a {
+    font-size: 1.2rem;
+  }
+
+  .social {
+    margin-top: .8rem;
+    font-size: 18px;
+  }
+
+  .social a {
+    margin: .3rem .6rem;
+  }
+
+  .abtm {
+    padding: 1rem 1.8rem;
+  }
+
+  .abtm .fr1 h1 {
+    font-size: 1.8rem;
+  }
+
+  .abtm .fr2 p {
+    line-height: 1.4rem;
+    font-size: 1rem;
+  }
+
+  .abtm a button {
+    font-size: 1.1rem;
+    margin-top: 0.8rem;
+    padding: .2rem .5rem;
+  }
+
+  .box-container {
+    padding-top: 2rem;
+  }
+
+  .headingE {
+    margin-bottom: .2rem;
+    font-size: 1.3rem;
+  }
+
+  .boxes {
+    padding: .8rem 0rem;
+  }
+
+  .box {
+    padding-left: .5rem;
+  }
+
+  .box-container .box span {
+    font-size: 1.2rem;
+  }
+
+  .box-container .box h3 {
+    font-size: 1.2rem;
+  }
+
+  .box-container .box p{
+    font-size: 1.1rem;
+    line-height: 18px;
+  }
+
+  .education .box-container .box i {
+    font-size: 3rem;
+  }
+
+  .interests {
+    padding-top: .5rem;
+  }
+
+  .interests h1 {
+    line-height: 3px;
+    font-size: 1.3rem;
+  }
+
+  .interests ul {
+    margin: 1rem 1.8rem;
+  }
+
+  .interests ul li {
+    padding: .4rem 0rem;
+    font-size: 1.2rem;
+  }
+
+}
+*/
+
+
+*****
+.about {
+  max-width: 100%;
+}
+
+.about .row {
+  width: 100%;
+  background-color: rgb(231, 229, 229);
+  display: flex;
+  justify-content: space-around;
+  padding: 12rem 0rem;
+  padding-bottom: 25rem;
+  font-size: 18px;
+}
+
+.headd {
+  width: 34%;
+}
+
+.heading1 {
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+  color: #0a0a0a;
+}
+
+.about .row .counter {
+  width: 60%;
+  flex: 1 1 0rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about .row .counter .box {
+  width: 38rem;
+  height: 13rem;
+  font-size: 1rem;
+  background: #f8f7f7;
+  text-align: center;
+  padding: 2rem 1.5rem;
+  margin: 1rem;
+}
+
+.about .counter .box span {
+  font-size: 2rem;
+  color: var(--yellow);
+  font-family: 'Merriweather',sans-serif;
+
+}
+
+.about .row .counter p {
+  font-size: 15px;
+  margin: 1rem 0rem;
+}
+
+.about .row .counter button {
+  background-color: rgb(63, 81, 181);
+  border: 2px solid rgb(63, 81, 181);
+  color: white;
+  border-radius: 10px;
+  padding: .3rem 3rem;
+}
+
+.about .row .counter button:hover {
+  background-color: white;
+  color: black;
+}
+
+@media screen and (max-width: 1024px){    
+  .about .row {
+    display: block;
+    margin: auto;
+  }
+
+  .headd {
+    width: 100%;
+  }
+
+  .heading1 {
+    font-size: 2rem;
+  }
+
+  .about .row .counter {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+  }
+
+  .about .row .counter .box {
+    width: 40%;
+    height: 13rem;
+    padding: 1rem .8rem;
+    margin: 1rem 1rem;
+  }
+
+  .about .counter .box span {
+    font-size: 1.4rem;
+    color: black;
+  }
+
+  .about .row .counter .box h2 {
+    font-size: 1.4rem;
+  }
+
+  .about .row .counter p {
+    font-size: 14px;
+    margin: .5rem 0rem;
+  }
+
+  .about .row .counter button {
+    padding: .2rem 2rem;
+    margin-top: 1.5rem;
+  }
+
+}
+
+@media screen and (max-width: 768px){    
+
+  .heading1 {
+    font-size: 25px ;
+  }
+
+  .about .row .counter .box {
+    width: 70%;
+    height: 13rem;
+    padding: .5rem 1.5rem;
+    margin: 1.2rem 4rem;
+  }
+
+  .about .counter .box span {
+    font-size: 1.5rem;
+  }
+
+  .about .row .counter .box h2 {
+    font-size: 16px;
+  }
+
+  .about .row .counter p {
+    font-size: 15px;
+    margin: .5rem 0rem;
+  }
+
+  .about .row .counter button {
+    padding: .2rem 2rem;
+    font-size: 15px;
+    margin: 1rem 0rem;
+  }
+
+}
+
+/*
+@media screen and (max-width: 481px){    
+
+  .heading1 {
+    font-size: 1.3rem;
+  }
+
+  .about .row .counter .box {
+    width: 100%;
+    height: 12rem;
+    padding: .5rem 1.5rem;
+    margin: 1rem 3.5rem;
+  }
+
+  .about .counter .box span {
+    font-size: 1rem;
+  }
+
+  .about .row .counter .box h2 {
+    font-size: 1rem;
+  }
+
+  .about .row .counter p {
+    font-size: 10px;
+    margin: .5rem 0rem;
+  }
+
+  .about .row .counter button {
+    padding: .1rem 2rem;
+    margin-top: 1.5rem;
+  }
+
+}
+*/
+
+
+******
+
+.course {
+  max-width: 100%;
+}
+
+.coursew {
+  width: 100%;
+  padding: 12rem 0rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.coursework {
+  width: 35%;
+  display: flex;
+  text-align: center;
+  color: rgb(17, 17, 17);
+  font-family: 'Merriweather',sans-serif;
+
+}
+
+.coursework h1 {
+  width: 100%;
+  font-size: 25px;
+  justify-content: center;
+}
+
+.courseworking {
+  width: 65%;
+  font-size: 16px;
+}
+
+.courseworking p {
+  width: 93%;
+  line-height: 2.1rem;
+  font-size: 18px;
+}
+
+.courseworkin {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.courseworkin ol {
+  align-items: center;
+  margin: 2rem;
+  margin-top: 1rem;
+}
+
+.courseworkin ul li {
+  font-size: 16px;
+  width: 93%;
+  align-items: center;
+}
+
+.courseworkin ul {
+  margin: 2rem;
+  line-height: 2.3rem;
+  margin-top: .3rem;
+}
+
+
+@media screen and (max-width: 1024px) {
+  
+  .coursew {
+    padding: 12rem 1rem;
+    display: block;
+  }  
+
+  .coursework {
+    width: 100%;
+  }
+  
+  .coursework h1{
+    font-size: 2rem;
+  }
+
+  .courseworking {
+    width: 100%;
+  }
+
+  .courseworking p {
+    width: 100%;
+    line-height: 1.8rem;
+    font-size: 1.4rem;
+    padding: .4rem 2rem;
+  }
+
+  .courseworkin {
+    width: 100%;
+    margin-top: .5rem;
+    padding: 0rem 1.8rem;
+  }
+
+  .courseworkin h3{
+    font-size: 1.55rem;
+  }
+
+  .courseworkin ol {
+    margin: 1.8rem;
+    margin-top: .5rem;
+  }
+
+  .courseworkin ol li {
+    font-size: 1.5rem;
+  }
+
+  .courseworkin ul li {
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    width:100%;
+  }
+
+  .courseworkin ul {
+    margin: 1rem;
+    margin-top: .3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+    
+  .coursework h1{
+    font-size: 25px;
+  } 
+
+  .courseworking p {
+    line-height: 20px;
+    font-size: 15px;
+  }
+
+  .courseworkin {
+    margin-top: 1rem;
+  }
+
+  .courseworkin h3{
+    font-size: 18px;
+  }
+
+  .courseworkin ol {
+    margin-top: .6rem;
+  }
+
+  .courseworkin ol li {
+    font-size: 1.7rem;
+  }
+
+  .courseworkin ol {
+    margin-top: 1rem;
+  }
+
+  .courseworkin ul li {
+    font-size: 1.5rem;
+    line-height: 22px;
+  }
+
+}
+
+/*
+@media screen and (max-width: 481px) {
+    
+  .coursework h1{
+    font-size: 1.4rem;
+  }
+
+  .courseworking p {
+    line-height: 1.4rem;
+    font-size: 1rem;
+    padding: .3rem 1.8rem;
+  }
+
+  .courseworkin {
+    margin-top: .5rem;
+    padding: 0rem 1.8rem;
+  }
+
+  .courseworkin h3{
+    font-size: 1.25rem;
+  }
+
+  .courseworkin ol {
+    margin: 1.8rem;
+    margin-top: .5rem;
+  }
+
+  .courseworkin ol li {
+    font-size: 1.2rem;
+  }
+
+  .courseworkin ul li {
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
+
+  .courseworkin ul {
+    margin: 1rem;
+    line-height: 2.1rem;
+    margin-top: .3rem;
+  }
+}
+*/
+
+
+
+*****
+.teach {
+  max-width: 100%;
+}
+
+.teachi {
+  background-color: rgb(231, 229, 229);
+  width: 100%;
+  padding: 12rem 0rem;
+  padding-bottom: 30rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.teachin {
+  width: 35%;
+  color: rgb(17, 17, 17);
+  margin-bottom: 3rem;
+  display: flex;
+  text-align: center;
+}
+
+.teachin h1 {
+  width: 100%;
+  font-size: 25px;
+  justify-content: center;
+}
+
+.teaching {
+  width: 65%;
+}
+
+.teaching p {
+  width: 95%;
+  line-height: 2.3rem;
+  font-size: 18px;
+}
+
+.teachingg {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.teachingg h2 {
+  font-size: 20px;
+}
+
+.teachingg ul li {
+  font-size: 16px;
+  align-items: center;
+}
+
+.teachingg ul {
+  margin: 2rem;
+  line-height: 2.3rem;
+  margin-top: .3rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .teachi {
+    display: block;
+    justify-content: space-around;
+    padding: 12rem 1rem;
+  }
+  
+  .teachin {
+    width: 100%;
+    margin-bottom: .5rem;
+  }
+  
+  .teachin h1 {
+    font-size: 2rem;
+  }
+  
+  .teaching {
+    width: 100%;
+    padding: 0rem 1.8rem;
+  }
+  
+  .teaching p {
+    width: 100%;
+    line-height: 1.6rem;
+    font-size: 1.5rem;
+  }
+  
+  .teachingg h2 {
+    font-size: 1.6rem;
+  }
+  
+  .teachingg ul {
+    width: 100%;
+    margin: 2rem;
+    margin-top: .6rem;
+  }  
+  
+  .teachingg ul li {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+  
+}
+
+
+
+@media screen and (max-width: 768px) {
+  
+  .teachin {
+    width: 100%;
+    margin-bottom: .5rem;
+  }
+  
+  .teachin h1 {
+    font-size: 25px;
+  }
+  
+  .teaching {
+    width: 100%;
+    padding: 0rem 1.8rem;
+  }
+  
+  .teaching p {
+    width: 100%;
+    line-height: 20px;
+    font-size: 1.5rem;
+  }
+  
+  .teachingg h2 {
+    font-size: 1.8rem;
+    padding-top: 1rem;
+  }
+  
+  .teachingg ul {
+    width: 100%;
+    margin: 2rem;
+    margin-top: .5rem;
+  }  
+  
+  .teachingg ul li {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  
+}
+
+/*
+@media screen and (max-width: 481px) {
+  .teachi {
+    display: block;
+    justify-content: space-around;
+  }
+  
+  .teachin {
+    width: 100%;
+    margin-bottom: .5rem;
+  }
+  
+  .teachin h1 {
+    font-size: 1.6rem;
+  }
+  
+  .teaching {
+    width: 100%;
+    padding: 0rem 1.8rem;
+  }
+  
+  .teaching p {
+    width: 100%;
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+  }
+  
+  .teachingg h2 {
+    font-size: 1.25rem;
+  }
+  
+  .teachingg ul {
+    width: 100%;
+    margin: 2rem;
+    margin-top: .3rem;
+  }  
+  
+  .teachingg ul li {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+  }
+  
+}
+*/
+
+
+*****
+
+.talkk {
+  max-width: 100%;
+}
+
+.talks {
+  width: 100%;
+  padding: 12rem 0rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.recentalk {
+  width: 35%;
+  color: rgb(17, 17, 17);
+  text-align: center;
+}
+
+.recentalk h1 {
+  width: 100%;
+  font-size: 25px;
+  justify-content: center;
+}
+
+.talkings {
+  width: 65%;
+}
+
+.talkings ul li {
+  width: 93%;
+  font-size: 16px;
+  line-height: 2rem;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+  
+  .talks {
+    display: block;
+    padding: 12rem 1rem;
+  }
+  
+  .recentalk {
+    width: 100%;
+  }
+  
+  .recentalk h1 {
+    font-size: 2rem;
+  }
+  
+  .talkings {
+    width: 100%;
+    padding: 0rem 1.8rem;
+    margin-top: .5rem;
+  }
+
+  .talkings ul {
+    padding: .5rem 1.5rem;
+
+  }
+  
+  .talkings ul li {
+    width: 100%;
+    font-size: 1.5rem;
+    line-height: 1.6rem;
+  }
+    
+}
+
+@media screen and (max-width: 768px) {
+  
+  .recentalk h1 {
+    font-size: 25px;
+  }
+  
+  .talkings {
+    padding: 0rem 1.8rem;
+    margin-top: .5rem;
+  }
+
+  .talkings ul {
+    padding: .5rem 1.5rem;
+
+  }
+  
+  .talkings ul li {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+    
+}
+
+
+/*
+@media screen and (max-width: 481px) {
+
+  .recentalk h1 {
+    font-size: 1.6rem;
+  }
+  
+  .talkings {
+    padding: 0rem 1.8rem;
+    margin-top: .5rem;
+  }
+
+  .talkings ul {
+    padding: .5rem 1.5rem;
+
+  }
+  
+  .talkings ul li {
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+  }
+      
+}
+*/
+
+
+
+*****
+.post {
+  max-width: 100%;
+}
+
+.posti {
+  background-color: rgb(231, 229, 229);
+  width: 100%;
+  padding: 12rem 0rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.postin {
+  width: 35%;
+  display: flex;
+  text-align: center;
+  color: rgb(17, 17, 17);
+}
+
+.postin h1 {
+  width: 100%;
+  font-size: 25px;
+}
+
+.posting {
+  width: 65%;
+}
+
+.posting h2 {
+  font-size: 25px;
+  margin-bottom: 1rem;
+}
+
+.msgbox {
+  width: 70%;
+  padding: 1rem;
+}
+
+.posting button {
+  font-size: 18px;
+  padding: .5rem 2rem;
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  background-color: rgb(63, 158, 63);
+}
+
+.postcont {
+  width: 70%;
+  padding: 3rem;
+  border: 1px solid black;
+}
+
+@media screen and (max-width: 1024px) {
+    
+  .posti {
+    width: 100%;
+    display: block;
+    padding: 12rem 1rem;
+  }
+
+  .postin {
+    width: 100%;
+  }
+
+  .postin h1 {
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .posting {
+    width: 100%;
+    margin: 2rem 0rem;
+    padding: 0rem 1.8rem;
+  }
+
+  .posting h2 {
+    font-size: 18px;
+    margin-bottom: .1.2rem;
+  }
+
+  .form {
+    width: 100%;
+  }
+
+  .msgbox {
+    height: 20rem;
+  }
+
+  .posting button {
+    font-size: 13px;
+    padding: .4rem 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .outcome {
+    width: 100%;
+  }
+
+  .postcont {
+    width: 66%;
+    height: 5rem;
+    padding: 3rem 0rem;
+  }
+
+  .comment {
+    width: 100%;
+    margin: 2rem 0rem;
+  }
+
+}
+
+
+@media screen and (max-width: 768px) {
+    
+  .postin h1 {
+    font-size: 25px;
+  }
+
+  .posting {
+    margin: 2rem 0rem;
+    padding: 0rem 1.8rem;
+  }
+
+  .posting h2 {
+    font-size: 18px;
+    margin-bottom: .15rem;
+  }
+
+  .msgbox {
+    height: 15rem;
+  }
+
+  .posting button {
+    font-size: 14px;
+    padding: .5rem 1.3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .outcome {
+    width: 100%;
+  }
+
+  .postcont {
+    padding: .5rem 0rem;
+  }
+
+  .comment {
+    width: 100%;
+  }
+
+  .comment form {
+    width: 50%;
+  }
+ 
+
+}
+
+/*
+@media screen and (max-width: 481px) {
+    
+  .posti {
+    width: 100%;
+    display: block;
+  }
+
+  .postin {
+    width: 100%;
+  }
+
+  .postin h1 {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .posting {
+    width: 100%;
+    margin: 2rem 0rem;
+    padding: 0rem 1.8rem;
+  }
+
+  .posting h2 {
+    font-size: 14px;
+    margin-bottom: .1rem;
+  }
+
+  .form {
+    width: 100%;
+  }
+
+  .msgbox {
+    width: 30rem;
+    height: 10rem;
+  }
+
+  .posting button {
+    font-size: 10px;
+    padding: .4rem 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .outcome {
+    width: 100%;
+  }
+
+  .postcont {
+    width: 85%;
+    height: 2rem;
+    padding: 3rem 0rem;
+  }
+
+  .comment {
+    width: 100%;
+    margin: 2rem 0rem;
+  }
+
+}
+*/
+
+
+*****
+.contact {
+  max-width: 100%;
+}
+
+.conta {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10rem 0rem;
+  margin-bottom: 18rem;
+  height: 15%;
+}
+ 
+.cont {
+  width: 35%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.headingc {
+  width: 100%;
+  text-align: center;
+  font-size: 26px;
+  color: black;
+}
+
+.contact .row {
+  width: 65%;
+  display: block;
+}
+
+.row .content {
+  padding: 0rem 1rem;
+}
+
+.content .title {
+  text-transform: uppercase;
+  color: black;
+  font-size: 2rem;
+  padding-bottom: 1.5rem;
+}
+
+.contact .row .content .info h3{
+  display: flex;
+  font-family: 'Merriweather',sans-serif;
+  font-size: 1.8rem;
+  color: black;
+  padding: .7rem 0;
+  font-weight: normal;
+}
+
+.contact .row .content .info h3 i {
+  padding-right: 1rem;
+}
+
+.mapouter {
+  width: 100%;
+  text-align: left;
+  height: 100%;
+}
+
+#gmap_canvas {
+  width: 90%;
+}
+
+.gmap_canvas {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: none!important;
+}
+
+@media screen and (max-width: 1024px) {
+  .conta {
+    display: block;
+    padding: 10rem 1rem;
+    margin-bottom: 10rem;
+  }
+   
+  .cont {
+    width: 100%;
+  }
+  
+  .headingc {
+    font-size: 2rem;
+    margin-bottom: .5rem;
+  }
+  
+  .contact .row {
+    width: 100%;
+  }
+  
+  .row .content {
+    padding: 0rem 1.8rem;
+  }
+  
+  .content .title {
+    font-size: 1.7rem;
+    padding-bottom: .3rem;
+  }
+  
+  .contact .row .content .info h3{
+    font-size: 1.5rem;
+    padding: .4rem 0;
+  } 
+  
+  .mapouter {
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    margin-top: 1rem;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .conta {
+    display: block;
+    margin-bottom: 10rem;
+  }
+   
+  .cont {
+    width: 100%;
+  }
+  
+  .headingc {
+    font-size: 25px;
+    margin-bottom: 1.8rem;
+  }
+  
+  .contact .row {
+    width: 100%;
+  }
+  
+  .row .content {
+    padding: 0rem 1.8rem;
+  }
+  
+  .content .title {
+    font-size: 18px;
+    padding-bottom: .5rem;
+  }
+  
+  .contact .row .content .info h3{
+    font-size: 1.6rem;
+    padding: .5rem 0;
+  } 
+  
+  .mapouter {
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    margin-top: 1.5rem;
+  }
+
+}
+/*
+@media screen and (max-width: 481px) {
+  .conta {
+    display: block;
+    margin-bottom: 10rem;
+  }
+   
+  .cont {
+    width: 100%;
+  }
+  
+  .headingc {
+    font-size: 1.3rem;
+    margin-bottom: .5rem;
+  }
+  
+  .contact .row {
+    width: 100%;
+  }
+  
+  .row .content {
+    padding: 0rem 1.8rem;
+  }
+  
+  .content .title {
+    font-size: 1.1rem;
+    padding-bottom: .3rem;
+  }
+  
+  .contact .row .content .info h3{
+    font-size: 1.1rem;
+    padding: .2rem 0;
+  } 
+  
+  .mapouter {
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    margin-top: .8rem;
+  }
+
+}
+*/

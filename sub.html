@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUB Doc</title>
+    
+    <link rel="stylesheet" href="style2.css/sub.css">
+
+  </head>
+
+  <body>
+    <div>
+      <textarea name="text" class="msgbox" placeholder="comments" id="" cols="30" rows="5"></textarea>
+      <input type="date" class="output">
+      <button onclick="addPosts()">Post</button>
+
+      <div class="para"></div>
+    </div>
+    
+  <script>
+
+    let inputs = [{name: 'wash cloth', dueDate: '20-05-2023'}, {name: 'clean house', dueDate: '20-05-2023'}];
+
+    renderText();
+
+    function renderText() {
+      let words = '';
+
+      for (let i = 0; i < inputs.length; i++) {
+        let text = inputs[i];
+        //const name = inputs.name;
+        //const dueDate = inputs.dueDate;
+        const {name, dueDate} = text;
+        let html = `
+        <p>
+          ${name} ${dueDate} 
+          <button onclick="inputs.splice(${i}, 1); renderText();">Delete
+          </button>
+          </p>`;
+        words += html;
+      }
+
+      let word = document.querySelector('.para').innerHTML = words;
+      console.log(words)
+    }  
+
+      
+      function addPosts() {
+        let box = document.querySelector('.msgbox');
+        const name = box.value;
+
+        let output = document.querySelector('.output');
+        dueDate = output.value;
+
+        inputs.push({name, dueDate})
+        console.log(inputs);
+
+        box.value = '';
+
+        renderText();
+      }
+
+  </script>
+
+  </body>
+</html>
